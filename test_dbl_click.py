@@ -11,5 +11,7 @@ def test_dclick():
   act_obj=ActionChains(dr)
   act_obj.double_click(dr.find_element("xpath","//button[text()='Copy Text']")).perform()
   sleep(2)
-  print('field 2->',dr.find_element("id","field2").get_attribute('value'))
+  field2=dr.find_element("id","field2").get_attribute('value')
+  print('field 2->',field2)
   sleep(10)
+  assert field2=='Hello World!'

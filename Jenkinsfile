@@ -32,7 +32,7 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pytest .\\test_dbl_click.py
+                pytest -vs .\\test_dbl_click.py
                 '''
             }
         }

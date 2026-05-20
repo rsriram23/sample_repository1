@@ -33,7 +33,7 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                pytest tests
+                python .\\dbl_click_test_auto_practice.py
                 '''
             }
         }

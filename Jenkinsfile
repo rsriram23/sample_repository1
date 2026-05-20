@@ -24,7 +24,6 @@ pipeline {
                 pip install --upgrade pip
                 pip install selenium==4.41.0
 				pip install pytest==7.4.3
-				pip install openpyxl==3.1.2
                 '''
             }
         }
@@ -33,7 +32,7 @@ pipeline {
             steps {
                 bat '''
                 call venv\\Scripts\\activate
-                python .\\dbl_click_test_auto_practice.py
+                pytest .\\test_dbl_click.py
                 '''
             }
         }

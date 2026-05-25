@@ -12,3 +12,4 @@ act_obj.double_click(dr.find_element("xpath","//button[text()='Copy Text']")).pe
 sleep(2)
 print('field 2->',dr.find_element("id","field2").get_attribute('value'))
 sleep(10)
+print('Enabled webhook for github auto triggering jenkins')
